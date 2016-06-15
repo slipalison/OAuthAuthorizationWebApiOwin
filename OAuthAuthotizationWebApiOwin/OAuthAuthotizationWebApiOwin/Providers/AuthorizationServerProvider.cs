@@ -29,7 +29,6 @@ namespace OAuthAuthotizationWebApiOwin.Providers
                 return;
             }
 
-
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);
 
             identity.AddClaim(new Claim(ClaimTypes.Name, user));

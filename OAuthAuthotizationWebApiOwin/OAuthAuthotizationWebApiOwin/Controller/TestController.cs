@@ -8,10 +8,11 @@ namespace OAuthAuthotizationWebApiOwin.Controller
     [RoutePrefix("api/v1/autentication")]
     public class TestController : BaseApiController
     {
-        [Route("GetUser"),HttpPost, Authorize()]
+        [Route("GetUser"),HttpPost, Authorize]
         public async Task<HttpResponseMessage> Get()
         {
-            return await TaskHttpResponseMessage(HttpStatusCode.OK, User.Identity.Name);
+            return await TaskHttpResponseMessage(HttpStatusCode.OK, new { user = User.Identity.Name });
         }
     }
 }
+

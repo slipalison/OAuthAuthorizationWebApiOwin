@@ -1,6 +1,6 @@
 ﻿using OAuthAuthotizationWebApiOwin.Domain.User.Events;
+using OAuthAuthotizationWebApiOwin.Emal.Infra.Email;
 using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
-using System;
 using System.Collections.Generic;
 
 namespace OAuthAuthotizationWebApiOwin.Domain.User.Handlers
@@ -8,31 +8,30 @@ namespace OAuthAuthotizationWebApiOwin.Domain.User.Handlers
     public class UserCadastradoHandler : IHandler<UserCadastradoEvent>
     {
         private List<UserCadastradoEvent> _notifications;
-        //private readonly 
+        private readonly IEnvioEmail _envioEmail;
+
+        public UserCadastradoHandler(IEnvioEmail envioEmail)
+        {
+            _envioEmail = envioEmail;
+        }
 
         public void Dispose()
         {
             _notifications = new List<UserCadastradoEvent>();
         }
 
-        public List<UserCadastradoEvent> GetValues()
-        {
-            return _notifications;
-        }
+        public List<UserCadastradoEvent> GetValues() => _notifications;
 
         public void Handle(UserCadastradoEvent args)
-        {
-            throw new NotImplementedException();
-        }
+            => _envioEmail.EnviarAsync(
+                           args.User.Name, 
+                           args.User.Email.Endereco,
+                           args.EmailTitle,
+                           args.EmailBody);
 
-        public bool HasNotification()
-        {
-            throw new NotImplementedException();
-        }
 
-        public IEnumerable<UserCadastradoEvent> Notify()
-        {
-            throw new NotImplementedException();
-        }
+        public bool HasNotification() => GetValues().Count > 0;
+
+        public IEnumerable<UserCadastradoEvent> Notify() => GetValues();
     }
 }

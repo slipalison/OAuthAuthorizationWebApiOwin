@@ -40,11 +40,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User\Events\UserCadastradoEvent.cs" />
     <Compile Include="User\Handlers\UserCadastradoHandler.cs" />
+    <Compile Include="User\Interfaces\IUserRepository.cs" />
     <Compile Include="User\User.cs" />
     <Compile Include="User\UserScope.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="User\Interfaces\" />
     <Folder Include="User\Services\" />
     <Folder Include="User\Specifications\" />
     <Folder Include="User\Validations\" />

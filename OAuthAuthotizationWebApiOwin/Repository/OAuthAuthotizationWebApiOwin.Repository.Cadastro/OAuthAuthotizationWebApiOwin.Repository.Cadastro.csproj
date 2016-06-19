@@ -47,11 +47,28 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contexto\ContextCadastro.cs" />
+    <Compile Include="EntityConfig\UserMap.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="UoW\UnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthotizationWebApiOwin.Domain.csproj">
+      <Project>{E5DDA4DA-5D99-4244-881D-E511FB22D4AC}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj">
+      <Project>{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.SharedKernel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

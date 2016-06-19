@@ -20,7 +20,7 @@ namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository
         }
 
         #region Write
-        public TEntity Create(TEntity obj) => DbSet.Add(obj);
+        public virtual TEntity Create(TEntity obj) => DbSet.Add(obj);
 
         public virtual void Delete(long id) => DbSet.Remove(DbSet.Find(id));
 
@@ -34,9 +34,9 @@ namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository
         #endregion
 
         #region Read
-        public IEnumerable<TEntity> GetAll() => DbSet.ToList();
+        public virtual IEnumerable<TEntity> GetAll() => DbSet.ToList();
 
-        public TEntity GetById(int id) => DbSet.Find(id);
+        public virtual TEntity GetById(int id) => DbSet.Find(id);
         #endregion
  
         public int SaveChanges() => Db.SaveChanges();

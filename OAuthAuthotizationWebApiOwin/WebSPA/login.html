@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="owin">
 
-<head ng-app="owin">
+<head >
     <meta charset="utf-8" />
     <title>Owin Security OAuth</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,28 +9,19 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
     <!-- CSS Libs -->
-
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/checkbox3/dist/checkbox3.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/DataTables/media/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/datatables/media/css/dataTables.bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/select2/dist/css/select2.min.css">
+    <link href="wwwroot/assets/css/styles-1.0.0.min.css" rel="stylesheet" />
     <!-- CSS App -->
     <link href="flatAdminTemplate/css/style.css" rel="stylesheet" />
     <link href="flatAdminTemplate/css/themes/flat-blue.css" rel="stylesheet" />
 </head>
-
-<body class="flat-blue login-page">
+<body class="flat-blue login-page" ng-controller="LoginCtrl as vm">
     <div class="container">
         <div class="login-box">
             <div>
                 <div class="login-form row">
                     <div class="col-sm-12 text-center login-header">
                         <i class="login-logo fa fa-connectdevelop fa-5x"></i>
-                        <h4 class="login-title">Flat Admin V2</h4>
+                        <h4 class="login-title">Owin Security OAuth</h4>
                     </div>
                     <div class="col-sm-12">
                         <div class="login-body">
@@ -39,17 +30,18 @@
                                     Log In...
                                 </div>
                             </div>
-                            <form>
+                            <form></form>
                                 <div class="control">
-                                    <input type="text" class="form-control" value="admin@gmail.com" />
+                                    <input required type="text" ng-model="vm.login.email" class="form-control" value="" placeholder="@ e-mail" />
                                 </div>
                                 <div class="control">
-                                    <input type="password" class="form-control" value="123456" />
+                                    <input required type="password" ng-model="vm.login.pass" class="form-control" value="" placeholder="Senha" />
                                 </div>
                                 <div class="login-button text-center">
-                                    <input type="submit" class="btn btn-primary" value="Login">
+                                    <button class="btn btn-primary" ng-click="vm.Send()">Login</button>
                                 </div>
-                            </form>
+                            
+                            {{vm.login|json}}
                         </div>
                         <div class="login-footer">
                             <span class="text-right"><a href="#" class="color-white">Forgot password?</a></span>
@@ -60,22 +52,9 @@
         </div>
     </div>
     <!-- Javascript Libs -->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="bower_components/Chart.js/dist/Chart.min.js"></script>
-    <script type="text/javascript" src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
-    
-    <script type="text/javascript" src="bower_components/matchHeight/jquery.matchHeight-min.js"></script>
-    <script type="text/javascript" src="bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript" src="bower_components/select2/dist/js/select2.full.min.js"></script>
-    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script src="wwwroot/assets/js/scripts-1.0.0.min.js"></script>
+    <script src="wwwroot/assets/js/app-1.0.0.min.js"></script>
 
-    <!--<script type="text/javascript" src="bower_components/ace-builds/src/ace.js"></script>
-    <script type="text/javascript" src="bower_components/ace-builds/src/mode-html.js"></script>
-    <script type="text/javascript" src="bower_components/ace-builds/src/theme-github.js"></script>-->
-    <!-- Javascript -->
-    <script type="text/javascript" src="flatAdminTemplate/js/app.js"></script>
 </body>
 
 </html>

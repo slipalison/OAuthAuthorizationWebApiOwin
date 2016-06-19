@@ -19,13 +19,13 @@ namespace OAuthAuthotizationWebApiOwin
         {
             ConfigureOAuth(app);
             var config = new HttpConfiguration();
-            app.UseCors(CorsOptions.AllowAll);
             ConfigureWebApi(config);
             app.UseWebApi(config);
         }
 
         public void ConfigureOAuth(IAppBuilder app)
         {
+            app.UseCors(CorsOptions.AllowAll);
             var OAuthServerOptions = new OAuthAuthorizationServerOptions
             {
                 AllowInsecureHttp = true,
@@ -39,6 +39,7 @@ namespace OAuthAuthotizationWebApiOwin
 
         public void ConfigureWebApi(HttpConfiguration config)
         {
+            config.EnableCors();
             config.MapHttpAttributeRoutes();
             config.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "api/{controller}/{id}", defaults: new { id = RouteParameter.Optional });
 

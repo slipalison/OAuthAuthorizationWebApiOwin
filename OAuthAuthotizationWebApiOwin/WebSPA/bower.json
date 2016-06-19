@@ -25,6 +25,8 @@
     "select2": "latest",
     "animate.css": "latest",
     "angular": "1.5.7",
+    "angular-route": "1.5.7",
+    "toastr": "2.1.2",
     "checkbox3": "~0.1.1"
   },
   "private": true,

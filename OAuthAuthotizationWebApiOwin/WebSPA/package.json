@@ -1,0 +1,22 @@
+{
+  "name": "webspa",
+  "version": "1.0.0",
+  "description": "estudos",
+  "main": "index.js",
+  "dependencies": {
+   
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jsvalidate": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-tsc": "^1.1.5",
+    "gulp-uglify": "^1.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alison de Amorim (slipalison)",
+  "license": "MIT"
+}

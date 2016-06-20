@@ -139,6 +139,22 @@
       <Project>{2f25cf40-be88-401d-af70-b6e97aad9801}</Project>
       <Name>OAuthAuthotizationWebApiOwin.Application</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthotizationWebApiOwin.Domain.csproj">
+      <Project>{E5DDA4DA-5D99-4244-881D-E511FB22D4AC}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj">
+      <Project>{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.SharedKernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infra\OAuthAuthotizationWebApiOwin.IoC\OAuthAuthotizationWebApiOwin.IoC.csproj">
+      <Project>{e0ddebcc-4b59-4c12-914a-634a7625887e}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.IoC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthotizationWebApiOwin.Repository.Cadastro.csproj">
+      <Project>{A8283F0C-33A1-46F8-BE46-841DA13D1686}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.Repository.Cadastro</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

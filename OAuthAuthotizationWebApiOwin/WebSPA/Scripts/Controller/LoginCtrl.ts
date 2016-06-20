@@ -11,7 +11,7 @@ module appOwin {
             this.$scope = scope;
             this.$location = local;
             this.$http = http;
-            this.login = { email: "slipalison", pass: "testando" };
+            this.login = { email: "alison@amorim.com", pass: "testando" };
             this.$scope.login = this.login;
         }
         Send() {

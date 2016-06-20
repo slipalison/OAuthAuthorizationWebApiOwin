@@ -4,4 +4,3 @@ var appOwin;
     'use strict';
     angular.module('owin', ['ngRoute']);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=app.js.map

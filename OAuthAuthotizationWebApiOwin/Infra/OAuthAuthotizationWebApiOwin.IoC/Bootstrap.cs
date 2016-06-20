@@ -1,4 +1,6 @@
-﻿using OAuthAuthotizationWebApiOwin.Domain.User.Events;
+﻿using OAuthAuthotizationWebApiOwin.Application.Interfaces;
+using OAuthAuthotizationWebApiOwin.Application.Services;
+using OAuthAuthotizationWebApiOwin.Domain.User.Events;
 using OAuthAuthotizationWebApiOwin.Domain.User.Handlers;
 using OAuthAuthotizationWebApiOwin.Domain.User.Interfaces;
 using OAuthAuthotizationWebApiOwin.Emal.Infra.Email;
@@ -11,12 +13,10 @@ using OAuthAuthotizationWebApiOwin.SharedKernel.Handlers;
 using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
-using SimpleInjector.Integration.Web.Mvc;
 using SimpleInjector.Integration.WebApi;
 using System;
 using System.Reflection;
 using System.Web.Http;
-using System.Web.Mvc;
 
 namespace OAuthAuthotizationWebApiOwin.IoC
 {
@@ -41,9 +41,9 @@ namespace OAuthAuthotizationWebApiOwin.IoC
             {
                 container.Options.DefaultScopedLifestyle = new WebRequestLifestyle();
                 InitializeContainer(container);
-                container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
+                //container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
                 container.Verify();
-                DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
+                //DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
             }
 
         }
@@ -59,11 +59,12 @@ namespace OAuthAuthotizationWebApiOwin.IoC
             container.RegisterPerWebRequest<IUnitOfWork, UnitOfWork>();
 
             #endregion
-            container.Register<IHandler<DomainNotification>, DomainNotificationHandler>(Lifestyle.Scoped);
-            container.Register<IHandler<UserCadastradoEvent>, UserCadastradoHandler>(Lifestyle.Scoped);
+            container.RegisterPerWebRequest<IHandler<DomainNotification>, DomainNotificationHandler>();
+            container.RegisterPerWebRequest<IHandler<UserCadastradoEvent>, UserCadastradoHandler>();
 
             container.RegisterPerWebRequest<ContextCadastro>();
             container.RegisterPerWebRequest<IUserRepository, UserRepository>();
+            container.RegisterPerWebRequest<IAuthentication, AuthenticationService>();
 
             container.Register<IEnvioEmail, EnvioEmail>(Lifestyle.Singleton);
 

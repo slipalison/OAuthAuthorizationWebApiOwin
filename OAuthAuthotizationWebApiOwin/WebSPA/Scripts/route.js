@@ -30,4 +30,3 @@ var appOwin;
     appOwin.Config = Config;
     angular.module('owin', ['ngRoute']).config(Config);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=route.js.map

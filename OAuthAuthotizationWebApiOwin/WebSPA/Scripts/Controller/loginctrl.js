@@ -7,7 +7,7 @@ var appOwin;
             this.$scope = scope;
             this.$location = local;
             this.$http = http;
-            this.login = { email: "slipalison", pass: "testando" };
+            this.login = { email: "alison@amorim.com", pass: "testando" };
             this.$scope.login = this.login;
         }
         LoginCtrl.prototype.Send = function () {
@@ -27,4 +27,3 @@ var appOwin;
     appOwin.LoginCtrl = LoginCtrl;
     angular.module('owin').controller('LoginCtrl', LoginCtrl);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=loginctrl.js.map

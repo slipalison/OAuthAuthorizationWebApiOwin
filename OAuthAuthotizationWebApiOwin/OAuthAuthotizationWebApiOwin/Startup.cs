@@ -8,6 +8,8 @@ using OAuthAuthotizationWebApiOwin.Providers;
 using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Net.Http.Formatting;
+using OAuthAuthotizationWebApiOwin.IoC;
+using OAuthAuthotizationWebApiOwin.Application.Interfaces;
 
 [assembly: OwinStartup(typeof(OAuthAuthotizationWebApiOwin.Startup))]
 
@@ -15,12 +17,14 @@ namespace OAuthAuthotizationWebApiOwin
 {
     public class Startup
     {
+      
         public void Configuration(IAppBuilder app)
         {
             ConfigureOAuth(app);
             var config = new HttpConfiguration();
             ConfigureWebApi(config);
             app.UseWebApi(config);
+           
         }
 
         public void ConfigureOAuth(IAppBuilder app)
@@ -45,6 +49,8 @@ namespace OAuthAuthotizationWebApiOwin
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+            Bootstrap.RegisterServices(ImplementationType.API, config);
         }
     }
 }

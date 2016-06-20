@@ -3,7 +3,7 @@ using OAuthAuthotizationWebApiOwin.Application.Services;
 using OAuthAuthotizationWebApiOwin.Domain.User.Events;
 using OAuthAuthotizationWebApiOwin.Domain.User.Handlers;
 using OAuthAuthotizationWebApiOwin.Domain.User.Interfaces;
-using OAuthAuthotizationWebApiOwin.Emal.Infra.Email;
+using OAuthAuthotizationWebApiOwin.E_mail.Infra.Email;
 using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Contexto;
 using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Interfaces;
 using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository;

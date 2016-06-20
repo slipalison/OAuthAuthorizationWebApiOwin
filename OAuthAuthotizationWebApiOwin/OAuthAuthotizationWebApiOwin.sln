@@ -25,7 +25,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.SharedKernel", "Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj", "{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.Emal.Infra", "OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthotizationWebApiOwin.Emal.Infra.csproj", "{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.E_mail.Infra", "OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthotizationWebApiOwin.E_mail.Infra.csproj", "{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.Repository.Cadastro", "Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthotizationWebApiOwin.Repository.Cadastro.csproj", "{A8283F0C-33A1-46F8-BE46-841DA13D1686}"
 EndProject

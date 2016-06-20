@@ -50,9 +50,9 @@
     <Folder Include="User\Validations\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthotizationWebApiOwin.Emal.Infra.csproj">
+    <ProjectReference Include="..\..\OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthotizationWebApiOwin.E_mail.Infra.csproj">
       <Project>{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.Emal.Infra</Name>
+      <Name>OAuthAuthotizationWebApiOwin.E_mail.Infra</Name>
     </ProjectReference>
     <ProjectReference Include="..\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj">
       <Project>{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}</Project>

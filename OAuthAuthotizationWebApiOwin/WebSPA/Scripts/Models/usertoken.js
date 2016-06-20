@@ -11,3 +11,4 @@ var appOwin;
     }());
     appOwin.UserToken = UserToken;
 })(appOwin || (appOwin = {}));
+//# sourceMappingURL=usertoken.js.map

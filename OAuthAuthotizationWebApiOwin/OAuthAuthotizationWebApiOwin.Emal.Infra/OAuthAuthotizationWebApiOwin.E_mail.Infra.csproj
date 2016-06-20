@@ -7,8 +7,8 @@
     <ProjectGuid>{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OAuthAuthotizationWebApiOwin.Emal.Infra</RootNamespace>
-    <AssemblyName>OAuthAuthotizationWebApiOwin.Emal.Infra</AssemblyName>
+    <RootNamespace>OAuthAuthotizationWebApiOwin.E_mail.Infra</RootNamespace>
+    <AssemblyName>OAuthAuthotizationWebApiOwin.E_mail.Infra</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

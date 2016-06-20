@@ -1,5 +1,5 @@
 ﻿using OAuthAuthotizationWebApiOwin.Domain.User.Events;
-using OAuthAuthotizationWebApiOwin.Emal.Infra.Email;
+using OAuthAuthotizationWebApiOwin.E_mail.Infra.Email;
 using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
 using System.Collections.Generic;
 

@@ -27,3 +27,4 @@ var appOwin;
     appOwin.LoginCtrl = LoginCtrl;
     angular.module('owin').controller('LoginCtrl', LoginCtrl);
 })(appOwin || (appOwin = {}));
+//# sourceMappingURL=loginctrl.js.map

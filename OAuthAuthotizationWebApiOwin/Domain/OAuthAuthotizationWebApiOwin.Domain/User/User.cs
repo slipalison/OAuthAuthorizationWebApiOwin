@@ -27,7 +27,7 @@ namespace OAuthAuthotizationWebApiOwin.Domain.User
         }
         public void DefinirEmail(string email)
         {
-            var myEmail = new Email(email);
+            var myEmail = new SharedKernel.ValueObjects.Email(email);
             if (this.DefinirEmailAlunoScopeEhValido(myEmail))
                 Email = myEmail;
         }

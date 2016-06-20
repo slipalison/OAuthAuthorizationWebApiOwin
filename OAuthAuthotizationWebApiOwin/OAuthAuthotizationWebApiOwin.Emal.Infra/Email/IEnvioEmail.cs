@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace OAuthAuthotizationWebApiOwin.Emal.Infra.Email
+namespace OAuthAuthotizationWebApiOwin.E_mail.Infra.Email
 {
     public interface IEnvioEmail
     {

@@ -33,7 +33,20 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationService.cs" />
+    <Compile Include="Interfaces\IAuthentication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthotizationWebApiOwin.Repository.Cadastro.csproj">
+      <Project>{A8283F0C-33A1-46F8-BE46-841DA13D1686}</Project>
+      <Name>OAuthAuthotizationWebApiOwin.Repository.Cadastro</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mapper\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

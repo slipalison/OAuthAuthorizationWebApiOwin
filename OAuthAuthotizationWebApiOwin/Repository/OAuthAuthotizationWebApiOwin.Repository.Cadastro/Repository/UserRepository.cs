@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using OAuthAuthotizationWebApiOwin.Domain.User;
-using OAuthAuthotizationWebApiOwin.Domain.User.Interfaces;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Contexto;
+using OAuthAuthorizationWebApiOwin.Domain.User;
+using OAuthAuthorizationWebApiOwin.Domain.User.Interfaces;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Contexto;
 using System;
 using System.Linq;
 
-namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository
+namespace OAuthAuthorizationWebApiOwin.Repository.Cadastro.Repository
 {
     public class UserRepository : RepositoryBase<User>, IUserRepository
     {

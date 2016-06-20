@@ -1,6 +1,6 @@
 ﻿/// <binding AfterBuild='script, ts, css' Clean='script, ts, css' />
-/// <reference path="C:\Estudos\OAuthAuthotizationWebApiOwin\OAuthAuthotizationWebApiOwin\WebSPA\Scripts/_references.js" />
-/// <reference path="C:\Estudos\OAuthAuthotizationWebApiOwin\OAuthAuthotizationWebApiOwin\WebSPA\Scripts/_references.js" />
+/// <reference path="C:\Estudos\OAuthAuthorizationWebApiOwin\OAuthAuthorizationWebApiOwin\WebSPA\Scripts/_references.js" />
+/// <reference path="C:\Estudos\OAuthAuthorizationWebApiOwin\OAuthAuthorizationWebApiOwin\WebSPA\Scripts/_references.js" />
 var gulp = require('gulp');
 var cssmin = require('gulp-cssmin');
 var ugify = require('gulp-uglify');

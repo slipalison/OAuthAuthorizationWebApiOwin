@@ -1,8 +1,8 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Events;
-using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Events;
+using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using System.Collections.Generic;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.Handlers
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.Handlers
 {
     public class DomainNotificationHandler : IHandler<DomainNotification>
     {

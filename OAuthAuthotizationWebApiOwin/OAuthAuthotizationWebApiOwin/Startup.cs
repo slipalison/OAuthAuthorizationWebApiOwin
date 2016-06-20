@@ -4,16 +4,16 @@ using Owin;
 using System.Web.Http;
 using Microsoft.Owin.Cors;
 using Microsoft.Owin.Security.OAuth;
-using OAuthAuthotizationWebApiOwin.Providers;
+using OAuthAuthorizationWebApiOwin.Providers;
 using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Net.Http.Formatting;
-using OAuthAuthotizationWebApiOwin.IoC;
-using OAuthAuthotizationWebApiOwin.Application.Interfaces;
+using OAuthAuthorizationWebApiOwin.IoC;
+using OAuthAuthorizationWebApiOwin.Application.Interfaces;
 
-[assembly: OwinStartup(typeof(OAuthAuthotizationWebApiOwin.Startup))]
+[assembly: OwinStartup(typeof(OAuthAuthorizationWebApiOwin.Startup))]
 
-namespace OAuthAuthotizationWebApiOwin
+namespace OAuthAuthorizationWebApiOwin
 {
     public class Startup
     {

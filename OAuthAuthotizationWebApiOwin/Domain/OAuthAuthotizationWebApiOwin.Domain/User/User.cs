@@ -1,8 +1,8 @@
 ﻿using DomainValidation.Validation;
-using OAuthAuthotizationWebApiOwin.SharedKernel.ValueObjects;
+using OAuthAuthorizationWebApiOwin.SharedKernel.ValueObjects;
 using System;
 
-namespace OAuthAuthotizationWebApiOwin.Domain.User
+namespace OAuthAuthorizationWebApiOwin.Domain.User
 {
     public class User
     {

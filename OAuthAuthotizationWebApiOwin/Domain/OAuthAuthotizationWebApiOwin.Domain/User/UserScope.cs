@@ -1,6 +1,6 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.ValueObjects;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.ValueObjects;
 
-namespace OAuthAuthotizationWebApiOwin.Domain.User
+namespace OAuthAuthorizationWebApiOwin.Domain.User
 {
     public static class UserScope
     {

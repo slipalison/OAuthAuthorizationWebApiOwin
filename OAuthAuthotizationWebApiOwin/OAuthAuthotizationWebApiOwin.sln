@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin", "OAuthAuthotizationWebApiOwin\OAuthAuthotizationWebApiOwin.csproj", "{F97CCF1C-ACCA-4785-BF51-E2E6ACE65BF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin", "OAuthAuthotizationWebApiOwin\OAuthAuthorizationWebApiOwin.csproj", "{F97CCF1C-ACCA-4785-BF51-E2E6ACE65BF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSPA", "WebSPA\WebSPA.csproj", "{A8E8B4D0-C516-4C9F-AB3F-BAE3EF3FBDE2}"
 EndProject
@@ -21,17 +21,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{5A3DA699-391E-4151-97B4-272819937675}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.Domain", "Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthotizationWebApiOwin.Domain.csproj", "{E5DDA4DA-5D99-4244-881D-E511FB22D4AC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin.Domain", "Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthorizationWebApiOwin.Domain.csproj", "{E5DDA4DA-5D99-4244-881D-E511FB22D4AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.SharedKernel", "Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj", "{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin.SharedKernel", "Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthorizationWebApiOwin.SharedKernel.csproj", "{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.E_mail.Infra", "OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthotizationWebApiOwin.E_mail.Infra.csproj", "{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin.E_mail.Infra", "OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthorizationWebApiOwin.E_mail.Infra.csproj", "{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.Repository.Cadastro", "Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthotizationWebApiOwin.Repository.Cadastro.csproj", "{A8283F0C-33A1-46F8-BE46-841DA13D1686}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin.Repository.Cadastro", "Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthorizationWebApiOwin.Repository.Cadastro.csproj", "{A8283F0C-33A1-46F8-BE46-841DA13D1686}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.Application", "Application\OAuthAuthotizationWebApiOwin.Application\OAuthAuthotizationWebApiOwin.Application.csproj", "{2F25CF40-BE88-401D-AF70-B6E97AAD9801}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin.Application", "Application\OAuthAuthotizationWebApiOwin.Application\OAuthAuthorizationWebApiOwin.Application.csproj", "{2F25CF40-BE88-401D-AF70-B6E97AAD9801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthotizationWebApiOwin.IoC", "Infra\OAuthAuthotizationWebApiOwin.IoC\OAuthAuthotizationWebApiOwin.IoC.csproj", "{E0DDEBCC-4B59-4C12-914A-634A7625887E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthAuthorizationWebApiOwin.IoC", "Infra\OAuthAuthotizationWebApiOwin.IoC\OAuthAuthorizationWebApiOwin.IoC.csproj", "{E0DDEBCC-4B59-4C12-914A-634A7625887E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

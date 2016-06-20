@@ -1,7 +1,7 @@
-﻿using OAuthAuthotizationWebApiOwin.Domain.User;
+﻿using OAuthAuthorizationWebApiOwin.Domain.User;
 using System.Data.Entity.ModelConfiguration;
 
-namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.EntityConfig
+namespace OAuthAuthorizationWebApiOwin.Repository.Cadastro.EntityConfig
 {
     public class UserMap : EntityTypeConfiguration<User>
     {

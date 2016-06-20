@@ -1,8 +1,8 @@
-﻿using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Contexto;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Contexto;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Interfaces;
 using System;
 
-namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.UoW
+namespace OAuthAuthorizationWebApiOwin.Repository.Cadastro.UoW
 {
     public class UnitOfWork : IUnitOfWork
     {

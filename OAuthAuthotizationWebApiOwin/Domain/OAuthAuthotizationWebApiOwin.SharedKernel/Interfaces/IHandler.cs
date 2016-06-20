@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces
 {
     public interface IHandler<T> : IDisposable where T : IDomainEvent
     {

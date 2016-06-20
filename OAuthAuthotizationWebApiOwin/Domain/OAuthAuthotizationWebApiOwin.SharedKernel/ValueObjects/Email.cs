@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.ValueObjects
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.ValueObjects
 {
     public class Email
     {

@@ -1,7 +1,7 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using System;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.ValueObjects
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.ValueObjects
 {
     public class Aggregate : IAggregate
     {

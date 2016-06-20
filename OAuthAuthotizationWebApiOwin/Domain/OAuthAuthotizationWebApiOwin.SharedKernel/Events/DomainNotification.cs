@@ -1,7 +1,7 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using System;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.Events
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.Events
 {
     public class DomainNotification : IDomainEvent
     {

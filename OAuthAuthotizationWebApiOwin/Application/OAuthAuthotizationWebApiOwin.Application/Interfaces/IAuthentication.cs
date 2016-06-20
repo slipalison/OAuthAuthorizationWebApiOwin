@@ -1,4 +1,4 @@
-﻿namespace OAuthAuthotizationWebApiOwin.Application.Interfaces
+﻿namespace OAuthAuthorizationWebApiOwin.Application.Interfaces
 {
     public interface IAuthentication
     {

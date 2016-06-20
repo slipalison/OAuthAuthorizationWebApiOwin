@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Linq;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.Helpers
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.Helpers
 {
     public class TextoHelper
     {

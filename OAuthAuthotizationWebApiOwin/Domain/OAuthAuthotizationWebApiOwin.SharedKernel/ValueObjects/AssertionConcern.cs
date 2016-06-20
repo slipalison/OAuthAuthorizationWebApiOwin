@@ -1,9 +1,9 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Events;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Events;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.ValueObjects
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.ValueObjects
 {
     public static class AssertionConcern
     {

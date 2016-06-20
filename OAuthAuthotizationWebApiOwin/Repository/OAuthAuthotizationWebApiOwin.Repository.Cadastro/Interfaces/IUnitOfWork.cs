@@ -1,4 +1,4 @@
-﻿namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.Interfaces
+﻿namespace OAuthAuthorizationWebApiOwin.Repository.Cadastro.Interfaces
 {
     public interface IUnitOfWork
     {

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OAuthAuthotizationWebApiOwin.Repository.Cadastro")]
+[assembly: AssemblyTitle("OAuthAuthorizationWebApiOwin.Repository.Cadastro")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OAuthAuthotizationWebApiOwin.Repository.Cadastro")]
+[assembly: AssemblyProduct("OAuthAuthorizationWebApiOwin.Repository.Cadastro")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

@@ -1,16 +1,16 @@
-﻿using OAuthAuthotizationWebApiOwin.Application.Interfaces;
-using OAuthAuthotizationWebApiOwin.Application.Services;
-using OAuthAuthotizationWebApiOwin.Domain.User.Events;
-using OAuthAuthotizationWebApiOwin.Domain.User.Handlers;
-using OAuthAuthotizationWebApiOwin.Domain.User.Interfaces;
-using OAuthAuthotizationWebApiOwin.E_mail.Infra.Email;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Contexto;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Interfaces;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.UoW;
-using OAuthAuthotizationWebApiOwin.SharedKernel.Events;
-using OAuthAuthotizationWebApiOwin.SharedKernel.Handlers;
-using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.Application.Interfaces;
+using OAuthAuthorizationWebApiOwin.Application.Services;
+using OAuthAuthorizationWebApiOwin.Domain.User.Events;
+using OAuthAuthorizationWebApiOwin.Domain.User.Handlers;
+using OAuthAuthorizationWebApiOwin.Domain.User.Interfaces;
+using OAuthAuthorizationWebApiOwin.E_mail.Infra.Email;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Contexto;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Interfaces;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Repository;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.UoW;
+using OAuthAuthorizationWebApiOwin.SharedKernel.Events;
+using OAuthAuthorizationWebApiOwin.SharedKernel.Handlers;
+using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using SimpleInjector;
 using SimpleInjector.Integration.Web;
 using SimpleInjector.Integration.WebApi;
@@ -18,7 +18,7 @@ using System;
 using System.Reflection;
 using System.Web.Http;
 
-namespace OAuthAuthotizationWebApiOwin.IoC
+namespace OAuthAuthorizationWebApiOwin.IoC
 {
     public class Bootstrap
     {

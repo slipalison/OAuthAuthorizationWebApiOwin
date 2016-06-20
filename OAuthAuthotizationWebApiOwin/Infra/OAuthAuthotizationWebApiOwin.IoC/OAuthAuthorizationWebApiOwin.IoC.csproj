@@ -7,8 +7,8 @@
     <ProjectGuid>{E0DDEBCC-4B59-4C12-914A-634A7625887E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OAuthAuthotizationWebApiOwin.IoC</RootNamespace>
-    <AssemblyName>OAuthAuthotizationWebApiOwin.IoC</AssemblyName>
+    <RootNamespace>OAuthAuthorizationWebApiOwin.IoC</RootNamespace>
+    <AssemblyName>OAuthAuthorizationWebApiOwin.IoC</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -86,25 +86,25 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Application\OAuthAuthotizationWebApiOwin.Application\OAuthAuthotizationWebApiOwin.Application.csproj">
+    <ProjectReference Include="..\..\Application\OAuthAuthotizationWebApiOwin.Application\OAuthAuthorizationWebApiOwin.Application.csproj">
       <Project>{2F25CF40-BE88-401D-AF70-B6E97AAD9801}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.Application</Name>
+      <Name>OAuthAuthorizationWebApiOwin.Application</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthotizationWebApiOwin.Domain.csproj">
+    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthorizationWebApiOwin.Domain.csproj">
       <Project>{E5DDA4DA-5D99-4244-881D-E511FB22D4AC}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.Domain</Name>
+      <Name>OAuthAuthorizationWebApiOwin.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj">
+    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthorizationWebApiOwin.SharedKernel.csproj">
       <Project>{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.SharedKernel</Name>
+      <Name>OAuthAuthorizationWebApiOwin.SharedKernel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthotizationWebApiOwin.E_mail.Infra.csproj">
+    <ProjectReference Include="..\..\OAuthAuthotizationWebApiOwin.Emal.Infra\OAuthAuthorizationWebApiOwin.E_mail.Infra.csproj">
       <Project>{7A55EF3F-8111-4FEF-BA44-BCA3805A1BE3}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.E_mail.Infra</Name>
+      <Name>OAuthAuthorizationWebApiOwin.E_mail.Infra</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthotizationWebApiOwin.Repository.Cadastro.csproj">
+    <ProjectReference Include="..\..\Repository\OAuthAuthotizationWebApiOwin.Repository.Cadastro\OAuthAuthorizationWebApiOwin.Repository.Cadastro.csproj">
       <Project>{A8283F0C-33A1-46F8-BE46-841DA13D1686}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.Repository.Cadastro</Name>
+      <Name>OAuthAuthorizationWebApiOwin.Repository.Cadastro</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

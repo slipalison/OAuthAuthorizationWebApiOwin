@@ -1,6 +1,6 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 
-namespace OAuthAuthotizationWebApiOwin.Domain.User.Interfaces
+namespace OAuthAuthorizationWebApiOwin.Domain.User.Interfaces
 {
     public interface IUserRepository:IRead<User>,IWrite<User>
     {

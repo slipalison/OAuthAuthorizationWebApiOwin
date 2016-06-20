@@ -1,7 +1,7 @@
-﻿using OAuthAuthotizationWebApiOwin.Application.Interfaces;
-using OAuthAuthotizationWebApiOwin.Domain.User.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.Application.Interfaces;
+using OAuthAuthorizationWebApiOwin.Domain.User.Interfaces;
 
-namespace OAuthAuthotizationWebApiOwin.Application.Services
+namespace OAuthAuthorizationWebApiOwin.Application.Services
 {
     public class AuthenticationService : IAuthentication
     {

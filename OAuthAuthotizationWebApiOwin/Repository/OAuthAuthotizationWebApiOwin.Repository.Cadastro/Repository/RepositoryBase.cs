@@ -1,11 +1,11 @@
-﻿using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Contexto;
-using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Contexto;
+using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
-namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository
+namespace OAuthAuthorizationWebApiOwin.Repository.Cadastro.Repository
 {
     public class RepositoryBase<TEntity> : IDisposable, IWrite<TEntity>, IRead<TEntity> where TEntity : class
     {

@@ -1,6 +1,6 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.Events
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.Events
 {
     public class DomainEvent
     {

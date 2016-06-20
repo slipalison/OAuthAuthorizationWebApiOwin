@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces
+namespace OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces
 {
     public interface IAggregate
     {

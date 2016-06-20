@@ -1,6 +1,6 @@
-﻿using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Interfaces;
 
-namespace OAuthAuthotizationWebApiOwin.Application
+namespace OAuthAuthorizationWebApiOwin.Application
 {
     public class ApplicationService
     {

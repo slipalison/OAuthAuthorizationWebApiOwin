@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading;
-using OAuthAuthotizationWebApiOwin.Application.Interfaces;
-using OAuthAuthotizationWebApiOwin.Application.Services;
-using OAuthAuthotizationWebApiOwin.Repository.Cadastro.Repository;
-using OAuthAuthotizationWebApiOwin.Domain.User.Interfaces;
+using OAuthAuthorizationWebApiOwin.Application.Interfaces;
+using OAuthAuthorizationWebApiOwin.Application.Services;
+using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Repository;
+using OAuthAuthorizationWebApiOwin.Domain.User.Interfaces;
 
-namespace OAuthAuthotizationWebApiOwin.Providers
+namespace OAuthAuthorizationWebApiOwin.Providers
 {
     public class AuthorizationServerProvider : OAuthAuthorizationServerProvider
     {

@@ -1,9 +1,9 @@
-﻿using OAuthAuthotizationWebApiOwin.Domain.User;
+﻿using OAuthAuthorizationWebApiOwin.Domain.User;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.Entity.SqlServer;
 
-namespace OAuthAuthotizationWebApiOwin.Repository.Cadastro.Contexto
+namespace OAuthAuthorizationWebApiOwin.Repository.Cadastro.Contexto
 {
     public class ContextCadastro : DbContext
     {

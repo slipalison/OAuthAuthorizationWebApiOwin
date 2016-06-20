@@ -7,8 +7,8 @@
     <ProjectGuid>{A8283F0C-33A1-46F8-BE46-841DA13D1686}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OAuthAuthotizationWebApiOwin.Repository.Cadastro</RootNamespace>
-    <AssemblyName>OAuthAuthotizationWebApiOwin.Repository.Cadastro</AssemblyName>
+    <RootNamespace>OAuthAuthorizationWebApiOwin.Repository.Cadastro</RootNamespace>
+    <AssemblyName>OAuthAuthorizationWebApiOwin.Repository.Cadastro</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -61,13 +61,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthotizationWebApiOwin.Domain.csproj">
+    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.Domain\OAuthAuthorizationWebApiOwin.Domain.csproj">
       <Project>{E5DDA4DA-5D99-4244-881D-E511FB22D4AC}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.Domain</Name>
+      <Name>OAuthAuthorizationWebApiOwin.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthotizationWebApiOwin.SharedKernel.csproj">
+    <ProjectReference Include="..\..\Domain\OAuthAuthotizationWebApiOwin.SharedKernel\OAuthAuthorizationWebApiOwin.SharedKernel.csproj">
       <Project>{8E372A6E-2C41-4F1D-83A4-DEAB6708DCD0}</Project>
-      <Name>OAuthAuthotizationWebApiOwin.SharedKernel</Name>
+      <Name>OAuthAuthorizationWebApiOwin.SharedKernel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

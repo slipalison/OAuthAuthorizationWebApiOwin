@@ -1,7 +1,7 @@
-﻿using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using System;
 
-namespace OAuthAuthotizationWebApiOwin.Domain.User.Events
+namespace OAuthAuthorizationWebApiOwin.Domain.User.Events
 {
     public class UserCadastradoEvent : IDomainEvent
     {

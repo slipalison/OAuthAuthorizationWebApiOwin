@@ -1,9 +1,9 @@
-﻿using OAuthAuthotizationWebApiOwin.Domain.User.Events;
-using OAuthAuthotizationWebApiOwin.E_mail.Infra.Email;
-using OAuthAuthotizationWebApiOwin.SharedKernel.Interfaces;
+﻿using OAuthAuthorizationWebApiOwin.Domain.User.Events;
+using OAuthAuthorizationWebApiOwin.E_mail.Infra.Email;
+using OAuthAuthorizationWebApiOwin.SharedKernel.Interfaces;
 using System.Collections.Generic;
 
-namespace OAuthAuthotizationWebApiOwin.Domain.User.Handlers
+namespace OAuthAuthorizationWebApiOwin.Domain.User.Handlers
 {
     public class UserCadastradoHandler : IHandler<UserCadastradoEvent>
     {

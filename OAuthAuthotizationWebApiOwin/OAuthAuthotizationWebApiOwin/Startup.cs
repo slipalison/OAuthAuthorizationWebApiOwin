@@ -9,7 +9,7 @@ using Newtonsoft.Json.Serialization;
 using System.Linq;
 using System.Net.Http.Formatting;
 using OAuthAuthorizationWebApiOwin.IoC;
-using OAuthAuthorizationWebApiOwin.Application.Interfaces;
+using OAuthAuthorizationWebApiOwin.Application.Mappers;
 
 [assembly: OwinStartup(typeof(OAuthAuthorizationWebApiOwin.Startup))]
 
@@ -24,7 +24,7 @@ namespace OAuthAuthorizationWebApiOwin
             var config = new HttpConfiguration();
             ConfigureWebApi(config);
             app.UseWebApi(config);
-           
+            AutoMapperConfig.RegisterMappings();
         }
 
         public void ConfigureOAuth(IAppBuilder app)
@@ -45,7 +45,11 @@ namespace OAuthAuthorizationWebApiOwin
         {
             config.EnableCors();
             config.MapHttpAttributeRoutes();
-            config.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "api/{controller}/{id}", defaults: new { id = RouteParameter.Optional });
+            config.Routes.MapHttpRoute(
+                name: "DefaultApi", 
+                routeTemplate: "api/{controller}/{id}", 
+                defaults: new { id = RouteParameter.Optional }
+                );
 
             var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
             jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();

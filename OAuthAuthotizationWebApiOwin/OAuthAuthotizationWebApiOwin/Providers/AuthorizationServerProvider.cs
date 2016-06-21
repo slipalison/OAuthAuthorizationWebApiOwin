@@ -4,16 +4,16 @@ using System.Threading.Tasks;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Threading;
-using OAuthAuthorizationWebApiOwin.Application.Interfaces;
 using OAuthAuthorizationWebApiOwin.Application.Services;
 using OAuthAuthorizationWebApiOwin.Repository.Cadastro.Repository;
 using OAuthAuthorizationWebApiOwin.Domain.User.Interfaces;
+using Newtonsoft.Json;
 
 namespace OAuthAuthorizationWebApiOwin.Providers
 {
     public class AuthorizationServerProvider : OAuthAuthorizationServerProvider
     {
-      
+
 
         public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
         {
@@ -32,15 +32,16 @@ namespace OAuthAuthorizationWebApiOwin.Providers
             IUserRepository u = new UserRepository(t);
             var _auth = new AuthenticationService(u);
 
-            if(!_auth.LoginValid(user,pass))
-            //consulta ao banco e etc.
-           // if (user != "slipalison" || pass != "testando")
+            if (!_auth.LoginValid(user, pass))
             {
                 context.SetError("invalid_grant", "Usuário ou senha inválidos");
                 return;
             }
 
+
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+             var usuario = _auth.GetUser(user, pass);
+            user = JsonConvert.SerializeObject(usuario);
 
             identity.AddClaim(new Claim(ClaimTypes.Name, user));
 

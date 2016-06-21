@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OAuthAuthorizationWebApiOwin.Domain.User;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
@@ -9,6 +10,14 @@ namespace OAuthAuthorizationWebApiOwin.Application.ViewModel
         public UserViewModel()
         {
             Id = Guid.NewGuid();
+        }
+
+        public UserViewModel(User user)
+        {
+            Id = user.Id;
+            Name = user.Name;
+            Email = user.Email.Endereco;
+            Active = user.Active;
         }
 
         [Key]

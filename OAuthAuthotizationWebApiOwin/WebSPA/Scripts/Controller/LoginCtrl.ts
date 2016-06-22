@@ -15,22 +15,13 @@ module appOwin {
             this.$scope.login = this.login;
         }
         Send() {
-
-
-
             var data = `grant_type=password&username=${this.$scope.login.email}&password=${this.$scope.login.pass}`;
             this.$http.post('http://localhost:10498/server/api/security/token', data, { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
                 .success(function (result) {
                     console.log(result);
                     window.localStorage.setItem('Utoken', JSON.stringify(result));
                     window.location.href = 'http://localhost:10498/';
-
-                    //this.$scope.token = result.access_token;
                 });
-
-
-        
-            console.log(this.$scope.login);
         }
     }
     interface ILogin {

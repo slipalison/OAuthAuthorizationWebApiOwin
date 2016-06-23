@@ -1,31 +1,48 @@
 ﻿/// <reference path="../_reference.ts" />
 module appOwin {
-
-    export class BearerAuthIntercepto {
-        static $inject = ['$q', '$window'];
-        constructor(public $q: ng.IQService, public $window: ng.IWindowService) {
-
+    'use strict';
+    class ApiCallInterceptor implements ng.IHttpInterceptor {
+        // @ngInject
+        static factory($q: ng.IQService): ApiCallInterceptor {
+            return new ApiCallInterceptor($q);
         }
-        request(config:any) {
+
+        constructor(private $q: ng.IQService) {
+        }
+
+        // created as instance method using arrow function (see notes)
+        request = (config: ng.IRequestConfig): ng.IRequestConfig => {
+            console.info('Request:', config);
             config.headers = config.headers || {};
-            if (this.$window.localStorage.getItem('Utoken')) {
-                // may also use sessionStorage
-                config.headers.Authorization = 'Bearer ' + this.$window.localStorage.getItem('Utoken');
-            }
-            return config || this.$q.when(config);
-        }
-        response(response) {
-            if (response.status === 401) {
-                //  Redirect user to login page / signup Page.
-                this.$window.location.href = 'http://localhost:10498/login.html';
-            }
-            return response || this.$q.when(response);
-        }
+            var authData = JSON.parse(window.localStorage.getItem('Utoken'));
 
+
+            if (authData) {
+                config.headers['Authorization'] = 'Bearer ' + authData.access_token;
+            }
+            // modify config
+
+            return config;
+        };
+
+        // created as instance method using arrow function (see notes)
+        response = <T>(response: ng.IHttpPromiseCallbackArg<T>): ng.IPromise<T> => {
+            console.info('Response:', response);
+            //if (response.status === 401) {
+            //    this.$location.path('/login');
+            //}
+            // modify response
+
+            return this.$q.when(response);
+        };
     }
 
-    angular.module('owin').factory('BearerAuthIntercepto', BearerAuthIntercepto);
-   // angular.module('owin').config(function ($httpProvider) { $httpProvider.interceptors.push('BearerAuthInterceptor'); });
+    let httpConfig = ($httpProvider: ng.IHttpProvider) => {
+        /* push the factory function to the array of $httpProvider
+         * interceptors (implements IHttpInterceptorFactory) */
+        $httpProvider.interceptors.push(ApiCallInterceptor.factory);
+    };
+    angular.module('owin').config(httpConfig);
 }
 
 

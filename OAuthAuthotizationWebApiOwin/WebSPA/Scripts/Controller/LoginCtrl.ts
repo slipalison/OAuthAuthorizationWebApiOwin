@@ -24,7 +24,7 @@ module appOwin {
                 });
         }
     }
-    interface ILogin {
+    export interface ILogin {
         email: string,
         pass: string,
     }

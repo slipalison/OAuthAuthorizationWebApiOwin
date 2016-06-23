@@ -1,30 +1,43 @@
 /// <reference path="../_reference.ts" />
 var appOwin;
 (function (appOwin) {
-    var BearerAuthIntercepto = (function () {
-        function BearerAuthIntercepto($q, $window) {
+    'use strict';
+    var ApiCallInterceptor = (function () {
+        function ApiCallInterceptor($q) {
+            var _this = this;
             this.$q = $q;
-            this.$window = $window;
+            // created as instance method using arrow function (see notes)
+            this.request = function (config) {
+                console.info('Request:', config);
+                config.headers = config.headers || {};
+                var authData = JSON.parse(window.localStorage.getItem('Utoken'));
+                if (authData) {
+                    config.headers['Authorization'] = 'Bearer ' + authData.access_token;
+                }
+                // modify config
+                return config;
+            };
+            // created as instance method using arrow function (see notes)
+            this.response = function (response) {
+                console.info('Response:', response);
+                //if (response.status === 401) {
+                //    this.$location.path('/login');
+                //}
+                // modify response
+                return _this.$q.when(response);
+            };
         }
-        BearerAuthIntercepto.prototype.request = function (config) {
-            config.headers = config.headers || {};
-            if (this.$window.localStorage.getItem('Utoken')) {
-                // may also use sessionStorage
-                config.headers.Authorization = 'Bearer ' + this.$window.localStorage.getItem('Utoken');
-            }
-            return config || this.$q.when(config);
+        // @ngInject
+        ApiCallInterceptor.factory = function ($q) {
+            return new ApiCallInterceptor($q);
         };
-        BearerAuthIntercepto.prototype.response = function (response) {
-            if (response.status === 401) {
-                //  Redirect user to login page / signup Page.
-                this.$window.location.href = 'http://localhost:10498/login.html';
-            }
-            return response || this.$q.when(response);
-        };
-        BearerAuthIntercepto.$inject = ['$q', '$window'];
-        return BearerAuthIntercepto;
+        return ApiCallInterceptor;
     }());
-    appOwin.BearerAuthIntercepto = BearerAuthIntercepto;
-    angular.module('owin').factory('BearerAuthIntercepto', BearerAuthIntercepto);
+    var httpConfig = function ($httpProvider) {
+        /* push the factory function to the array of $httpProvider
+         * interceptors (implements IHttpInterceptorFactory) */
+        $httpProvider.interceptors.push(ApiCallInterceptor.factory);
+    };
+    angular.module('owin').config(httpConfig);
 })(appOwin || (appOwin = {}));
 //# sourceMappingURL=bearerauthinterceptor.js.map

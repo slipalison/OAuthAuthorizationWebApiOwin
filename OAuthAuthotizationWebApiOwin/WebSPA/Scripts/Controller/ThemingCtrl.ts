@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_reference.ts" />
 module appOwin {
-    'use strict'
+    'use strict';
     export class ThemingCtrl {
         $scope: any;
         static $inject = ['$scope'];
@@ -8,5 +8,5 @@ module appOwin {
             this.$scope = scope;
         }
     }
-    angular.module('owin').controller('ThemingCtrl', ThemingCtrl);
+    appModule.app.controller('ThemingCtrl', ThemingCtrl);
 }

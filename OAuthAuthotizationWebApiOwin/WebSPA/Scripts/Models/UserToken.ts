@@ -1,5 +1,5 @@
 ﻿module appOwin {
-    'use strict'
+    'use strict';
     export class UserToken {
         constructor(public title: string,
             public userName: string,

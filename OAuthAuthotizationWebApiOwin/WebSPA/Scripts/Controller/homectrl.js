@@ -10,6 +10,5 @@ var appOwin;
         return HomeCtrl;
     }());
     appOwin.HomeCtrl = HomeCtrl;
-    angular.module('owin').controller('HomeCtrl', HomeCtrl);
+    appModule.app.controller('HomeCtrl', HomeCtrl);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=homectrl.js.map

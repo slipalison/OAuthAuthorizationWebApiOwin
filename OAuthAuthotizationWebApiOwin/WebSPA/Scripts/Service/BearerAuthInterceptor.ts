@@ -7,15 +7,13 @@ module appOwin {
             return new ApiCallInterceptor($q);
         }
 
-        constructor(private $q: ng.IQService) {
-        }
+        constructor(private $q: ng.IQService) {}
 
         // created as instance method using arrow function (see notes)
         request = (config: ng.IRequestConfig): ng.IRequestConfig => {
-            console.info('Request:', config);
+           // console.info('Request:', config);
             config.headers = config.headers || {};
             var authData = JSON.parse(window.localStorage.getItem('Utoken'));
-
 
             if (authData) {
                 config.headers['Authorization'] = 'Bearer ' + authData.access_token;
@@ -27,7 +25,7 @@ module appOwin {
 
         // created as instance method using arrow function (see notes)
         response = <T>(response: ng.IHttpPromiseCallbackArg<T>): ng.IPromise<T> => {
-            console.info('Response:', response);
+           // console.info('Response:', response);
             //if (response.status === 401) {
             //    this.$location.path('/login');
             //}
@@ -42,7 +40,7 @@ module appOwin {
          * interceptors (implements IHttpInterceptorFactory) */
         $httpProvider.interceptors.push(ApiCallInterceptor.factory);
     };
-    angular.module('owin').config(httpConfig);
+    appModule.app.config(httpConfig);
 }
 
 

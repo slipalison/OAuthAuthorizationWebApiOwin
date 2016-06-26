@@ -10,6 +10,5 @@ var appOwin;
         return ThemingCtrl;
     }());
     appOwin.ThemingCtrl = ThemingCtrl;
-    angular.module('owin').controller('ThemingCtrl', ThemingCtrl);
+    appModule.app.controller('ThemingCtrl', ThemingCtrl);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=themingctrl.js.map

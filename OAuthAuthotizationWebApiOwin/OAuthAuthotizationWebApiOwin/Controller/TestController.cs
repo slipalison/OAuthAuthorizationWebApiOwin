@@ -15,7 +15,7 @@ namespace OAuthAuthorizationWebApiOwin.Controller
         {
             UserViewModel user = (UserViewModel)JsonConvert.DeserializeObject(User.Identity.Name, typeof(UserViewModel));
 
-            return await TaskHttpResponseMessage(HttpStatusCode.OK, new { user = User.Identity.Name });
+            return await TaskHttpResponseMessage(HttpStatusCode.OK, user );
         }
     }
 }

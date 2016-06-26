@@ -12,6 +12,5 @@ var appOwin;
         }
     }
     start.$inject = ['$rootScope'];
-    angular.module('owin').run(start);
+    appModule.app.run(start);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=startup.js.map

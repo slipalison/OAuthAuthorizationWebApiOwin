@@ -75,19 +75,19 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="dropdown profile" ng-controller="ProfileCtrl as vm">
-                            <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{vm.user.Name}}<span class="caret"></span></a>
+                        <li class="dropdown profile" ng-controller="ProfileCtrl">
+                            <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{profile.name}}<span class="caret"></span></a>
                             <ul class="dropdown-menu animated fadeInDown">
                                 <li class="profile-img">
                                     <img src="flatAdminTemplate/img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
                                 </li>
                                 <li>
                                     <div class="profile-info">
-                                        <h4 class="username">{{vm.user.Name}}</h4>
-                                        <p>{{vm.user.Email}}</p>
+                                        <h4 class="username">{{profile.name}}</h4>
+                                        <p>{{profile.email}}</p>
                                         <div class="btn-group margin-bottom-2x" role="group">
-                                            <button type="button" class="btn btn-default" ng-click="vm.GetAuth()"><i class="fa fa-user"></i> Profile</button>
-                                            <button type="button" class="btn btn-default" ng-click="vm.Logout()"><i class="fa fa-sign-out"></i> Logout</button>
+                                            <button type="button" class="btn btn-default" ng-click="GetAuth()"><i class="fa fa-user"></i> Profile</button>
+                                            <button type="button" class="btn btn-default" ng-click="Logout()"><i class="fa fa-sign-out"></i> Logout</button>
                                         </div>
                                     </div>
                                 </li>
@@ -102,7 +102,7 @@
                         <div class="navbar-header">
                             <a class="navbar-brand" ng-href="#/">
                                 <div class="icon fa fa-paper-plane"></div>
-                                <div class="title">Flat Admin V.2</div>
+                                <div class="title">Owin Security OAuth</div>
                             </a>
                             <button type="button" class="navbar-expand-toggle pull-right visible-xs">
                                 <i class="fa fa-times icon"></i>
@@ -110,12 +110,12 @@
                         </div>
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a ng-href="index.html">
+                                <a ng-href="#/">
                                     <span class="icon fa fa-tachometer"></span><span class="title">Dashboard</span>
                                 </a>
                             </li>
                             <li class="panel panel-default dropdown">
-                                <a data-toggle="collapse" ng-href="#dropdown-element">
+                                <a data-toggle="collapse" ng-href="#/#dropdown-element">
                                     <span class="icon fa fa-desktop"></span><span class="title">UI Kits</span>
                                 </a>
                                 <!-- Dropdown level 1 -->
@@ -123,44 +123,44 @@
                                     <div class="panel-body">
                                         <ul class="nav navbar-nav">
                                             <li>
-                                                <a ng-href="ui-kits/theming.html">Theming</a>
+                                                <a ng-href="#/theming">Theming</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/grid.html">Grid</a>
+                                                <a ng-href="#/grid">Grid</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/button.html">Buttons</a>
+                                                <a ng-href="#/button">Buttons</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/card.html">Cards</a>
+                                                <a ng-href="#/card">Cards</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/list.html">Lists</a>
+                                                <a ng-href="#/list">Lists</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/modal.html">Modals</a>
+                                                <a ng-href="#/modal">Modals</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/alert.html">Alerts & Toasts</a>
+                                                <a ng-href="#/alert">Alerts & Toasts</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/panel.html">Panels</a>
+                                                <a ng-href="#/panel">Panels</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/loader.html">Loaders</a>
+                                                <a ng-href="#/loader">Loaders</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/step.html">Tabs & Steps</a>
+                                                <a ng-href="#/step">Tabs & Steps</a>
                                             </li>
                                             <li>
-                                                <a ng-href="flatAdminTemplate/html/ui-kits/other.html">Other</a>
+                                                <a ng-href="#/other">Other</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </li>
                             <li class="panel panel-default dropdown">
-                                <a data-toggle="collapse" ng-href="#dropdown-table">
+                                <a data-toggle="collapse" ng-href="#/#dropdown-table">
                                     <span class="icon fa fa-table"></span><span class="title">Table</span>
                                 </a>
                                 <!-- Dropdown level 1 -->
@@ -178,7 +178,7 @@
                                 </div>
                             </li>
                             <li class="panel panel-default dropdown">
-                                <a data-toggle="collapse" ng-href="#dropdown-form">
+                                <a data-toggle="collapse" ng-href="#/#dropdown-form">
                                     <span class="icon fa fa-file-text-o"></span><span class="title">Form</span>
                                 </a>
                                 <!-- Dropdown level 1 -->
@@ -194,7 +194,7 @@
                             </li>
                             <!-- Dropdown-->
                             <li class="panel panel-default dropdown">
-                                <a data-toggle="collapse" ng-href="#component-example">
+                                <a data-toggle="collapse" ng-href="#/#component-example">
                                     <span class="icon fa fa-cubes"></span><span class="title">Components</span>
                                 </a>
                                 <!-- Dropdown level 1 -->
@@ -213,7 +213,7 @@
                             </li>
                             <!-- Dropdown-->
                             <li class="panel panel-default dropdown">
-                                <a data-toggle="collapse" ng-href="#dropdown-example">
+                                <a data-toggle="collapse" ng-href="#/#dropdown-example">
                                     <span class="icon fa fa-slack"></span><span class="title">Page Example</span>
                                 </a>
                                 <!-- Dropdown level 1 -->
@@ -232,7 +232,7 @@
                             </li>
                             <!-- Dropdown-->
                             <li class="panel panel-default dropdown">
-                                <a data-toggle="collapse" ng-href="#dropdown-icon">
+                                <a data-toggle="collapse" ng-href="#/#dropdown-icon">
                                     <span class="icon fa fa-archive"></span><span class="title">Icons</span>
                                 </a>
                                 <!-- Dropdown level 1 -->

@@ -1,12 +1,12 @@
 ﻿/// <reference path="../_reference.ts" />
 module appOwin {
-    'use strict'
+    'use strict';
     export class HomeCtrl {
-        $scope: any;
+        $scope: ng.IScope;
         static $inject = ["$scope"];
         constructor(scope: ng.IScope) {
             this.$scope = scope;
         }
     }
-    angular.module('owin').controller('HomeCtrl', HomeCtrl);
+    appModule.app.controller('HomeCtrl', HomeCtrl);
 }

@@ -1222,7 +1222,17 @@
     <Content Include="wwwroot\assets\js\scripts-1.0.0.min.js" />
     <Content Include="wwwroot\assets\js\theming.js" />
     <Content Include="wwwroot\pages\404.html" />
-    <Content Include="wwwroot\pages\Theming.html" />
+    <Content Include="wwwroot\pages\ui-kits\alert.html" />
+    <Content Include="wwwroot\pages\ui-kits\button.html" />
+    <Content Include="wwwroot\pages\ui-kits\card.html" />
+    <Content Include="wwwroot\pages\ui-kits\grid.html" />
+    <Content Include="wwwroot\pages\ui-kits\list.html" />
+    <Content Include="wwwroot\pages\ui-kits\loader.html" />
+    <Content Include="wwwroot\pages\ui-kits\modal.html" />
+    <Content Include="wwwroot\pages\ui-kits\other.html" />
+    <Content Include="wwwroot\pages\ui-kits\panel.html" />
+    <Content Include="wwwroot\pages\ui-kits\step.html" />
+    <Content Include="wwwroot\pages\ui-kits\theming.html" />
     <None Include="Properties\PublishProfiles\tetste.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1245,12 +1255,24 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\app.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\AlertCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\ButtonCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\CardCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\GridCtrl.ts" />
     <TypeScriptCompile Include="Scripts\Controller\HomeCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\ListCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\LoaderCtrl.ts" />
     <TypeScriptCompile Include="Scripts\Controller\LoginCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\ModalCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\OtherCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\PanelCtrl.ts" />
     <TypeScriptCompile Include="Scripts\Controller\ProfileCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Controller\StepCtrl.ts" />
     <TypeScriptCompile Include="Scripts\Controller\ThemingCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Models\Profile.ts" />
     <TypeScriptCompile Include="Scripts\Route.ts" />
     <TypeScriptCompile Include="Scripts\Service\BearerAuthInterceptor.ts" />
+    <TypeScriptCompile Include="Scripts\Service\ProfileService.ts" />
     <TypeScriptCompile Include="Scripts\Startup.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />

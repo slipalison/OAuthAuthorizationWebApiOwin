@@ -8,7 +8,7 @@ var appOwin;
             this.$q = $q;
             // created as instance method using arrow function (see notes)
             this.request = function (config) {
-                console.info('Request:', config);
+                // console.info('Request:', config);
                 config.headers = config.headers || {};
                 var authData = JSON.parse(window.localStorage.getItem('Utoken'));
                 if (authData) {
@@ -19,7 +19,7 @@ var appOwin;
             };
             // created as instance method using arrow function (see notes)
             this.response = function (response) {
-                console.info('Response:', response);
+                // console.info('Response:', response);
                 //if (response.status === 401) {
                 //    this.$location.path('/login');
                 //}
@@ -38,6 +38,5 @@ var appOwin;
          * interceptors (implements IHttpInterceptorFactory) */
         $httpProvider.interceptors.push(ApiCallInterceptor.factory);
     };
-    angular.module('owin').config(httpConfig);
+    appModule.app.config(httpConfig);
 })(appOwin || (appOwin = {}));
-//# sourceMappingURL=bearerauthinterceptor.js.map

@@ -1,6 +1,6 @@
 ﻿/// <reference path="../_reference.ts" />
 module appOwin {
-    'use strict'
+    'use strict';
     export class LoginCtrl {
         $scope: any;
         $location: any;
@@ -28,5 +28,5 @@ module appOwin {
         email: string,
         pass: string,
     }
-    angular.module('owin').controller('LoginCtrl', LoginCtrl);
+    appModule.app.controller('LoginCtrl', LoginCtrl);
 }

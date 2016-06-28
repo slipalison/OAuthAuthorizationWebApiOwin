@@ -1221,6 +1221,7 @@
     <Content Include="wwwroot\assets\js\app-1.0.0.min.js" />
     <Content Include="wwwroot\assets\js\scripts-1.0.0.min.js" />
     <Content Include="wwwroot\assets\js\theming.js" />
+    <Content Include="wwwroot\assets\templates\miniprofile.html" />
     <Content Include="wwwroot\pages\404.html" />
     <Content Include="wwwroot\pages\ui-kits\alert.html" />
     <Content Include="wwwroot\pages\ui-kits\button.html" />
@@ -1269,6 +1270,7 @@
     <TypeScriptCompile Include="Scripts\Controller\ProfileCtrl.ts" />
     <TypeScriptCompile Include="Scripts\Controller\StepCtrl.ts" />
     <TypeScriptCompile Include="Scripts\Controller\ThemingCtrl.ts" />
+    <TypeScriptCompile Include="Scripts\Diretivas\MiniProfile.ts" />
     <TypeScriptCompile Include="Scripts\Models\Profile.ts" />
     <TypeScriptCompile Include="Scripts\Route.ts" />
     <TypeScriptCompile Include="Scripts\Service\BearerAuthInterceptor.ts" />

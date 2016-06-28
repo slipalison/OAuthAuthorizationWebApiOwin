@@ -1,0 +1,18 @@
+﻿<li class="dropdown profile" ng-controller="ProfileCtrl">
+    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{profile.name}}<span class="caret"></span></a>
+    <ul class="dropdown-menu animated fadeInDown">
+        <li class="profile-img">
+            <img src="flatAdminTemplate/img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
+        </li>
+        <li>
+            <div class="profile-info">
+                <h4 class="username">{{profile.name}}</h4>
+                <p>{{profile.email}}</p>
+                <div class="btn-group margin-bottom-2x" role="group">
+                    <button type="button" class="btn btn-default" ng-click="GetAuth()"><i class="fa fa-user"></i> Profile</button>
+                    <button type="button" class="btn btn-default" ng-click="Logout()"><i class="fa fa-sign-out"></i> Logout</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</li>
